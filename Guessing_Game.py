@@ -6,7 +6,7 @@ def play_game():
     guess = ""
     another_guess = ""
     guess_count = 0
-    guess_limit = 1
+    guess_limit = 3
     out_of_guesses = False
 
     print("\nPlease guess my favourite </> language :) \nYou can guess {} times".format(guess_limit)) # Formatting without f"" function
