@@ -32,7 +32,7 @@ def play_game():
 
     while out_of_guesses:
         another_guess = input("Would you like to have another try? (yes/no) ")
-        if another_guess.lower() in ["yes", "y", "ok","go"]:
+        if another_guess.lower() in ["yes", "y", "ok", "go"]:
             play_game()
             out_of_guesses = False
         elif another_guess.lower() in ["no", "n", "nope"]:
