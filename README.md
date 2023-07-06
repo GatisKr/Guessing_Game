@@ -1,2 +1,2 @@
-# Guessing_Game
+# Guessing Game
  Basic Guessing Game code built with "while loop" and "if" statements
