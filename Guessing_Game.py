@@ -9,12 +9,12 @@ def play_game():
     guess_limit = 3
     out_of_guesses = False
 
-    print("\nPlease guess my favourite </> language :) \nYou can guess {} times".format(guess_limit)) # Formatting without f"" function
+    print("\nPlease guess my favourite </> language :) \nYou can guess {} times".format(guess_limit)) # Formatting example without using f"" function
     name = input("\nPlease enter your name to continue: ")
 
     while guess.lower() != secret_word and not(out_of_guesses):
         if guess_count < guess_limit - 1:
-            guess = input(f"\nPlease enter your {guess_count + 1} guess: ") # Formatting with f"" function
+            guess = input(f"\nPlease enter your {guess_count + 1} guess: ") # Formatting example using f"" function
             guess_count += 1
             if guess.lower() != secret_word:
                 print("No, that won't be the right one")
@@ -29,6 +29,7 @@ def play_game():
         print(f"\nYou are out of guesses, {name}. Sorry.\n")
     else:
         print(f"\nCongratulations, {name}! You win!\n")
+        input("Please press <enter> to exit")
 
     while out_of_guesses:
         another_guess = input("Would you like to have another try? (yes/no) ")
@@ -37,6 +38,7 @@ def play_game():
             out_of_guesses = False
         elif another_guess.lower() in ["no", "n", "nope"]:
             print(f"Thanks for playing, {name}!\n")
+            input("Please press <enter> to exit")
             out_of_guesses = False
         elif another_guess.lower() in ["maybe"]:
             print(f"Please, give it a try! Say YES, YES, YES!!!\n")      
